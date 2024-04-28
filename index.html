@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+    <title>Consulta Cep</title>
+  </head>
+  <body>
+    <div class="consultNow">
+      <form id="formConsult" autocomplete="off">
+        <div class="input">
+          <input type="text" id="cep" name="cep" class="txt-underline" placeholder="Digite o CEP" onkeydown="return (event.keyCode!=13);">
+          <span class="underline"></span>
+        </div>
+        <button type="button" onclick="consultCep()"><i class="ri-search-line"></i></button>
+      </form>
+
+      <div class="listNow">
+      </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
